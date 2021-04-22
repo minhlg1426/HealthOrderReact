@@ -48,6 +48,7 @@ const OrderForm = () => {
             headers: config.headers
           }).then((response) => {
             console.log(response);
+            alert(response.data.message);
           }, (error) => {
             console.log(error);
           });
